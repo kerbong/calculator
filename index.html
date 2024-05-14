@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기 | by 첵스쿨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-content gradient">
+        <div class="input"></div>
+        <div class="output"></div>
+        <div class="save" title="현재 브라우저에 계산식 저장하기">save</div>
+      </div>
+      <div class="controls">
+        <div class="clear button gray" data-value="AC" data-keycode="46">
+          AC
+        </div>
+        <div class="button gray" data-value="" data-keycode="">+/-</div>
+        <div class="button gray" data-value="C" data-keycode="8">&larr;</div>
+        <div class="button gray" data-value="/" data-keycode="111">
+          &divide;
+        </div>
+        <div class="button" data-value="1" data-keycode="97">1</div>
+        <div class="button" data-value="2" data-keycode="98">2</div>
+        <div class="button" data-value="3" data-keycode="99">3</div>
+        <div class="button gray" data-value="*" data-keycode="106">&times;</div>
+        <div class="button" data-value="4" data-keycode="100">4</div>
+        <div class="button" data-value="5" data-keycode="101">5</div>
+        <div class="button" data-value="6" data-keycode="102">6</div>
+        <div class="button gray" data-value="-" data-keycode="109">&minus;</div>
+        <div class="button" data-value="7" data-keycode="103">7</div>
+        <div class="button" data-value="8" data-keycode="104">8</div>
+        <div class="button" data-value="9" data-keycode="105">9</div>
+        <div class="button gray" data-value="+" data-keycode="107">&plus;</div>
+        <div class="zero button" data-value="0" data-keycode="96">0</div>
+        <div class="button" data-value="." data-keycode="110">.</div>
+        <div class="equal button gradient" data-value="=" data-keycode="13">
+          =
+        </div>
+      </div>
+    </div>
+    <div class="reminder"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

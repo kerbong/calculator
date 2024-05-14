@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-family: "Quicksand";
+  background: #e6e9eb;
+}
+
+.container {
+  width: 350px;
+  display: grid;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+
+.reminder {
+  width: 350px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+
+.upper-content {
+  height: 250px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 3.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.remove {
+  color: red;
+  font-weight: bold;
+  margin: 5px 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 18px;
+  display: inline-block;
+  text-align: center;
+}
+
+.p-title {
+  text-align: center;
+}
+
+.reminder-span {
+  letter-spacing: 1px;
+}
+
+.remove:hover {
+  background-color: white;
+}
+
+.save {
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upper-content .output,
+.upper-content .input {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  transition: all 0.2s ease-in-out;
+}
+
+.upper-content .input.small {
+  left: 12%;
+  bottom: 70%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 60px);
+}
+
+.controls .zero {
+  grid-column: 1 / span 2;
+  border-bottom-left-radius: 10px;
+}
+
+.controls .equal {
+  border-bottom-right-radius: 10px;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.button:hover,
+.save:hover {
+  background-color: #e0e0e0; /* darken(#f4f4f4, 5%) 대체 */
+}
+
+.gradient {
+  background-image: linear-gradient(to top right, #de4996, #f8b42f);
+  color: #f4f4f4;
+}
+
+.gray {
+  background-color: #eaeaea;
+}
+
+.gray:hover {
+  background-color: #d6d6d6; /* darken(#f4f4f4, 10%) 대체 */
+}
