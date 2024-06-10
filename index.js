@@ -31,6 +31,7 @@ function loadReminders() {
     const removeSpan = document.createElement("span");
     removeSpan.classList.add("remove");
     removeSpan.textContent = "x";
+    removeSpan.title = "저장된 기록 지우기(되돌리기 불가)";
     removeSpan.addEventListener("click", function () {
       removeReminder(index);
     });
@@ -89,6 +90,7 @@ document.addEventListener("keydown", function (e) {
     "*",
     "/",
     "=",
+    ".",
     "Enter",
     "Backspace",
     "Escape",
